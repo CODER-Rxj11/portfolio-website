@@ -31,7 +31,7 @@
 }
 
 .logo{
-    width:80px;
+    width:40px;
 }
 
 .logo-container{
@@ -41,7 +41,7 @@
 }
 
 .logo-text{
-    margin-left:-1.2rem;
+    /* margin-left:0.01em; */
     font-size:28px;
 }
 
@@ -87,9 +87,9 @@ a{
 .faded-text{
     position:absolute;
     user-select:none;
-    font-size: 7em;
+    font-size: 10vw;
     color:rgb(231,231,231);
-    
+    transform: translateX(30%);
     bottom: -12%;
     left: -5%;
     font-weight: bold;
@@ -171,7 +171,7 @@ a{
 
   .user-image{
     padding:2.5rem;
-    filter:grayscale(1);
+    /* filter:grayscale(1); */
     transition:all 1s;
     animation: scaleImage 5s linear infinite;
   }
@@ -183,20 +183,20 @@ a{
   @keyframes scaleImage {
 
     0%{
-        filter:grayscale(0);
+        /* filter:grayscale(0); */
         transform:scale(1);
         
     }
 
     50%{
         transform:scale(1.1);
-        filter:grayscale(1);
+        /* filter:grayscale(1); */
         box-shadow: 3px 3px 10px black;
     }
 
     100%{
         transform:scale(1);
-        filter:grayscale(0);
+        /* filter:grayscale(0); */
     }
     
   }
@@ -438,6 +438,7 @@ a{
     color:white;
     font-size:35px;
     transition:all 0.4s;
+    margin-left: 0.5em;
   }
 
   .icon:hover{
@@ -517,6 +518,7 @@ a{
       display: none;
     }
     .project-card:hover .project-content {
+      padding-left: 50px;
       scale: 0.55;
     }
   }
@@ -546,11 +548,11 @@ a{
 
 .skill-fade-text{
   position:absolute;
-  font-size:15em;
+  font-size:10vw;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-34.5%;
-  right:-25%;
+  top:-20%;
+  left:5%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -686,8 +688,10 @@ footer{
 
 .footer-faded-text{
   position:absolute;
-  left:0;
-  bottom:0;color:#535c87;
+  left:50%;
+  top:75%;
+  transform: translate(-50%,-50%);
+  color:#535c87;
   user-select:none;
   font-size:5em;
 }
